@@ -13,13 +13,19 @@ body {
   padding: 3% 10%;
 }
 
+ul li {
+  display: inline-block;
+  margin: 3% 10%;
+}
+
 .btn-container {
-  width: 40vw;
   color: rgb(113, 250, 0);
   margin-top: 5%;
 }
 
 .wrapper {
   background-color: #0a373e;
-  padding: 2% 7%;
+  width: 6em;
+  height: 2em;
+  border-radius: 2px;
 }
