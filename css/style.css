@@ -198,6 +198,10 @@ summary {
     margin: 5%;
   }
 
+  .col_2 {
+    width: 15vw;
+  }
+
   .two {
     margin-left: 20px !important;
   }
