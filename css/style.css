@@ -198,4 +198,8 @@ tfoot tr {
   .three {
     margin-top: 10%;
   }
+
+  table {
+    width: 95vw !important;
+  }
 }
