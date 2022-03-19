@@ -71,8 +71,44 @@ ul li a:hover {
   background-image: url("../assets/crispy_crust.jpg");
 }
 
+label {
+  color: white;
+  margin-top: 5%;
+}
+
+select {
+  width: 80%;
+  height: 2em;
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 80%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(10%);
+}
+
+.checkbox input {
+  margin-top: 10px !important;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+button {
+  width: 80%;
+  height: 2.2em;
+  background-color: #4a1548;
+  color: gold;
+  outline: none !important;
+  border: none;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 992px) {
-  .container {
+  .container:nth-child(1) {
     margin-top: -2% !important;
   }
   .row {
