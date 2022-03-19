@@ -13,12 +13,12 @@ body {
   padding: 3% 10%;
 }
 
-ul li {
+header ul li {
   display: inline-block;
   margin: 3% 10%;
 }
 
-ul li a:hover {
+header ul li a:hover {
   color: gold !important;
 }
 
@@ -107,8 +107,87 @@ button {
   border-radius: 5px;
 }
 
+summary {
+  gap: 16px;
+}
+
+.card_container {
+  background-color: #115b66;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  color: white;
+  margin: 5% 0;
+  cursor: pointer;
+}
+
+.card_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1% 0.4%;
+}
+
+.item_img {
+  height: 15vh;
+  background-image: url("../assets/Thin_crust.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.col-1,
+.col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid #4a1548;
+}
+
+.col_2 {
+  width: 10vw;
+}
+
+.two {
+  margin-left: 1.7vw !important;
+}
+
+.col_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #0a373e;
+  color: gold;
+  margin: 0 8px;
+}
+
+.card_base {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10%;
+  background-color: #073037;
+  color: gold;
+}
+
+.btn1 {
+  background-color: #4a1548;
+  color: gold;
+  margin-top: 5%;
+}
+
 @media screen and (max-width: 992px) {
-  .container:nth-child(1) {
+  .one {
     margin-top: -2% !important;
   }
   .row {
@@ -117,5 +196,13 @@ button {
 
   .col-lg-3 {
     margin: 5%;
+  }
+
+  .two {
+    margin-left: 20px !important;
+  }
+
+  .three {
+    margin-top: 10%;
   }
 }
