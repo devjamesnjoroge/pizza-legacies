@@ -18,6 +18,10 @@ ul li {
   margin: 3% 10%;
 }
 
+ul li a:hover {
+  color: gold !important;
+}
+
 .btn-container {
   color: rgb(113, 250, 0);
   margin-top: 5%;
@@ -28,4 +32,37 @@ ul li {
   width: 6em;
   height: 2em;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.col-lg-3 {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Thin_crust {
+  background-image: url("../assets/Thin_crust.png");
+}
+
+.glutten_free {
+  background-image: url("../assets/glutten_free.jpg");
+}
+
+.toppings {
+  background-image: url("../assets/toppings.jpg");
+}
+
+.Fruit_topping {
+  background-image: url("../assets/Fruit_topping.png");
+}
+
+.Onions_topping {
+  background-image: url("../assets/Onions_topping.png");
+}
+
+.crispy_crust {
+  background-image: url("../assets/crispy_crust.jpg");
 }
