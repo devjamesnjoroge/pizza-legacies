@@ -83,7 +83,7 @@
                 >Pizza Crust Type <span class="text-danger">*</span></label
               >
               <br />
-              <select name="pcrust" id="pcrust">
+              <select required name="pcrust" id="pcrust">
                 <option value="blank"></option>
                 <option value="crispy">Crispy Crust</option>
                 <option value="Stuffed">Stuffed Crust</option>
@@ -94,7 +94,7 @@
               <label for="psize"
                 >Pizza Size<span class="text-danger">*</span></label
               ><br />
-              <select name="psize" id="psize">
+              <select required name="psize" id="psize">
                 <option value="blank"></option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -155,7 +155,21 @@
                 <div class="col_3">1200</div>
               </div>
             </div>
+
+            <div class="delivery_container">
+              <form>
+                <label for="deliver"
+                  >Would you want the pizza to be delivered?</label
+                >
+                <select name="bool" id="bool">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </form>
+              <button class="btn2" type="submit">Proceed</button>
+            </div>
             <button class="btn1" type="reset">Complete Order</button>
+            
           </div>
         </div>
       </div>

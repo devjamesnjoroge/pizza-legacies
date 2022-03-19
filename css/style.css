@@ -81,6 +81,7 @@ select {
   height: 2em;
   margin-top: 3%;
   cursor: pointer;
+  text-align: center;
 }
 
 .checkbox {
@@ -120,6 +121,7 @@ summary {
   color: white;
   margin: 5% 0;
   cursor: pointer;
+  display: none;
 }
 
 .card_wrapper {
@@ -183,6 +185,11 @@ summary {
 .btn1 {
   background-color: #4a1548;
   color: gold;
+  margin-top: 5%;
+  display: none;
+}
+
+.btn2 {
   margin-top: 5%;
 }
 
