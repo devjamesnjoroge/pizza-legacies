@@ -35,6 +35,10 @@ ul li a:hover {
   cursor: pointer;
 }
 
+.row:nth-child(2) {
+  padding-top: 5%;
+}
+
 .col-lg-3 {
   height: 60vh;
   background-position: center;
@@ -65,4 +69,17 @@ ul li a:hover {
 
 .crispy_crust {
   background-image: url("../assets/crispy_crust.jpg");
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-top: -2% !important;
+  }
+  .row {
+    padding: 5%;
+  }
+
+  .col-lg-3 {
+    margin: 5%;
+  }
 }
