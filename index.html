@@ -103,18 +103,18 @@
               <br />
               <label for="ptoppings">Pizza Toppings </label>
               <div class="checkbox">
-                <input type="checkbox" name="mush" id="mush" />
-                <label class="me-5" for="mush">Mushraom</label>
-                <input type="checkbox" name="mush" id="mush" />
-                <label for="mush">Mushreom</label>
-                <input type="checkbox" name="mush" id="mush" />
-                <label class="me-5" for="mush">Mushriom</label>
-                <input type="checkbox" name="mush" id="mush" />
-                <label for="mush">Mushroom</label>
-                <input type="checkbox" name="mush" id="mush" />
-                <label class="me-5" for="mush">Mushruom</label>
-                <input type="checkbox" name="mush" id="mush" />
-                <label for="mush">Mushroom</label>
+                <input type="checkbox" name="topping" id="mush" />
+                <label class="me-5" for="topping">Mushroom</label>
+                <input type="checkbox" name="topping" id="pep" />
+                <label for="topping">Pepperoni </label>
+                <input type="checkbox" name="topping" id="onions" />
+                <label class="me-5" for="topping">Onions</label>
+                <input type="checkbox" name="topping" id="sausage" />
+                <label for="topping">Sausage</label>
+                <input type="checkbox" name="topping" id="mbacon" />
+                <label class="me-5" for="topping">Bacon</label>
+                <input type="checkbox" name="topping" id="x-cheese" />
+                <label for="topping">X-cheese</label>
               </div>
               <button class="mt-5" type="submit">Add to Cart</button>
             </form>
@@ -125,7 +125,51 @@
               <img class="mb-2" src="assets/bookmark.svg" alt="bookmark" />
             </summary>
 
-            <div class="card_container">
+            <table>
+              <thead>
+                <tr>
+                  <th class="pb-3 pt-3 ps-3">Items</th>
+                  <th class="ps-5 pb-3 pt-3">Amount (kes)</th>
+                  <th class="ps-5 pb-3 pt-3 pe-3">Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                  <td class="pb-3 pt-4 ps-3" id="t_crust">
+                    <div class="item_img"></div>
+                    <span>Crispy Crust</span>
+                  </td>
+                  <td align="center" class="ps-5 pb-3">-</td>
+                  <td
+                    
+                    class="ps-5 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly align-items-center"
+                  >
+                    <div class="rounded">-</div>
+                    <div class="rounded inc_number bg-warning text-success">1</div>
+                    <div class="rounded">+</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="t_size ps-3 pb-3"><span>Large</span></td>
+                  <td align="center" class="ps-5 pb-3">1200</td>
+                  <td align="center" class="ps-5 pb-3 pe-3">-</td>
+                </tr>
+                <t >
+                  <td class="pb-3 ps-3">Bacon toppings</td>
+                  <td align="center" class="ps-5 pb-3">300</td>
+                  <td align="center" class="ps-5 pb-3 pe-3">-</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class=" pb-4 pt-4 ps-3">Total-Amount</td>
+                  <td align="center" class="ps-5 pb-4 pt-4">1500</td>
+                  <td align="center" class="ps-5 pb-4 pt-4 pe-3">1500</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <!-- <div class="card_container">
               <div class="card_wrapper">
                 <div class="col_1">
                   <div class="item_img"></div>
@@ -154,7 +198,7 @@
                 <div class="col_2 two">1200</div>
                 <div class="col_3">1200</div>
               </div>
-            </div>
+            </div> -->
 
             <div class="delivery_container">
               <form>
@@ -169,7 +213,6 @@
               <button class="btn2" type="submit">Proceed</button>
             </div>
             <button class="btn1" type="reset">Complete Order</button>
-            
           </div>
         </div>
       </div>
