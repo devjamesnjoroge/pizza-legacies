@@ -208,7 +208,8 @@ $(document).ready(function() {
             $(".delivery_container").css("display", "none");
             $(".location_delivery").css("display", "flex");
         } else {
-            alert(sumTotal * n);
+            alert("Your total cost of pizza is, " + sumTotal * n + " .Thank you for shopping with us. Pickup will be ready within 24 hours");
+            location.reload()
         }
     })
 
