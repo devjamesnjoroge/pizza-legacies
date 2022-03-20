@@ -9,15 +9,17 @@ $(document).ready(function() {
 
         n += 1;
         $("#n").text(n)
-
+        $("#totalNumbers").text(sumTotal * n);
     })
     $("#minusBtn").click(function() {
 
         if (n > 1) {
             n -= 1;
             $("#n").text(n)
+            $("#totalNumbers").text(sumTotal * n);
         } else {
             $("#n").text(n)
+            $("#totalNumbers").text(sumTotal * n);
         }
 
     })
@@ -159,6 +161,8 @@ $(document).ready(function() {
 
             $("#total").text(sumTotal);
 
+            //TOTAL AMOUNT BY NUMBER
+            $("#totalNumbers").text(sumTotal * n);
 
 
             //Make Formto disapper
@@ -177,5 +181,8 @@ $(document).ready(function() {
         }
     });
 
+    $("#btn_order").click(function() {
+        alert(sumTotal * n)
+    })
 
 });
