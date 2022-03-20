@@ -1,5 +1,28 @@
 $(document).ready(function() {
 
+    //Cart Addition and Substracting Items
+
+    var n = 1
+    $("#n").text(n)
+
+    $("#plusBtn").click(function() {
+
+        n += 1;
+        $("#n").text(n)
+
+    })
+    $("#minusBtn").click(function() {
+
+        if (n > 1) {
+            n -= 1;
+            $("#n").text(n)
+        } else {
+            $("#n").text(n)
+        }
+
+    })
+
+
     //User Inputs Constructor
 
     function Cart(pizza_crust, pizza_size, pizza_topping) {
@@ -135,6 +158,8 @@ $(document).ready(function() {
             //APPEND TOTAL AMOUNT TO HTML TABLE
 
             $("#total").text(sumTotal);
+
+
 
             //Make Formto disapper
 
