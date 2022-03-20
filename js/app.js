@@ -1,5 +1,7 @@
 $(document).ready(function() {
+
     //User Inputs Constructor
+
     function Cart(pizza_crust, pizza_size, pizza_topping) {
         (this.pizzaCrust = pizza_crust),
         (this.pizzaSize = pizza_size),
@@ -27,6 +29,7 @@ $(document).ready(function() {
         }
 
         return pizzaSizeAmount;
+
     }
 
     //Pizza Crust to Amount Prototype.
@@ -90,9 +93,14 @@ $(document).ready(function() {
                 "</span></td><td align='center' class='ps-3 pb-3'>" + userSelection.SizeAmount() + "</td><td align='center' class='ps-3 pb-3 pe-3'>-</td > < /tr>"
             );
 
-            userSelection.pizzaToppings.forEach((topping) => {
 
-                //COMBINED BUSINESS LOGIC WITH USER INTEFACE: LOOKING FOR METHOD TO MANOUVER THIS. CONTRIBUTE IF YOU HAVE A SOLUTION
+            //TOTAL AMOUNT ARRAY - TAKE IN ALL VALUES. UNIVERSAL SCOPE
+
+            var totalToppingsArray = [userSelection.SizeAmount(), userSelection.CrustAmount()];
+
+
+            //COMBINED BUSINESS LOGIC WITH USER INTEFACE: LOOKING FOR METHOD TO MANOUVER THIS. CONTRIBUTE IF YOU HAVE A SOLUTION
+            userSelection.pizzaToppings.forEach((topping) => {
 
                 switch (userSelection.pizzaSize) {
                     case "small":
@@ -112,16 +120,31 @@ $(document).ready(function() {
                     '<tr><td class="pb-3 ps-3">' +
                     topping +
                     '</td><td align="center" class="ps-3 pb-3">' + toppingAmount + '</td><td align = "center" class = "ps-3 pb-3 pe-3"></td></tr>');
+
+                totalToppingsArray.push(toppingAmount)
+
             });
 
 
+            sumTotal = 0;
+
+            for (i = 0; i < totalToppingsArray.length; i++) {
+                sumTotal += parseInt(totalToppingsArray[i]);
+            }
+
+            //APPEND TOTAL AMOUNT TO HTML TABLE
+
+            $("#total").text(sumTotal);
+
             //Make Formto disapper
+
             $("form").trigger("reset");
             $("#form").css("display", "none");
             $("#summary").css("display", "flex");
 
 
             //Empty the Cart Button
+
             $("#btn_empty").click(function() {
                 location.reload();
                 location.href($("#order"));
