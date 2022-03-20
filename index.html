@@ -1,89 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PIZZA LEGACIES</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header align="center" class="pt-4">
-      <ul>
-        <li>
-          <a class="text-decoration-none text-white" href="#menu">Menu</a>
-        </li>
-        <li>
-          <a class="text-decoration-none text-white" href="#order">Order</a>
-        </li>
-        <li>
-          <a class="text-decoration-none text-white" href="#">Contacts</a>
-        </li>
-      </ul>
+        <ul>
+            <li>
+                <a class="text-decoration-none text-white" href="#menu">Menu</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-white" href="#order">Order</a>
+            </li>
+            <li>
+                <a class="text-decoration-none text-white" href="#">Contacts</a>
+            </li>
+        </ul>
     </header>
 
     <section class="d-flex justify-content-center align-items-center">
-      <div
-        class="hero d-flex justify-content-center flex-column align-items-center"
-      >
-        <div class="logo d-flex align-items-center">
-          <img class="mb-3" src="assets/crown.svg" alt="crown" />
-          <h1 class="text-warning ms-3 text-uppercase">pizza legacies</h1>
+        <div class="hero d-flex justify-content-center flex-column align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img class="mb-3" src="assets/crown.svg" alt="crown" />
+                <h1 class="text-warning ms-3 text-uppercase">pizza legacies</h1>
+            </div>
+            <p class="text-white pt-3">
+                Tasty crispy and mouth waterly pizza, <br /> We offer the best quality pizza around <br /> Kenya.
+            </p>
+            <div class="btn-container d-flex justify-content-center align-items-center">
+                <span class="me-3">Order Now</span>
+                <div class="wrapper d-flex justify-content-center align-items-center">
+                    <img src="assets/arrow.svg" alt="arrow" />
+                </div>
+            </div>
         </div>
-        <p class="text-white pt-3">
-          Tasty crispy and mouth waterly pizza, <br />
-          We offer the best quality pizza around <br />
-          Kenya.
-        </p>
-        <div
-          class="btn-container d-flex justify-content-center align-items-center"
-        >
-          <span class="me-3">Order Now</span>
-          <div class="wrapper d-flex justify-content-center align-items-center">
-            <img src="assets/arrow.svg" alt="arrow" />
-          </div>
-        </div>
-      </div>
     </section>
     <!-- Floating Scroll Up Button -->
 
     <div class="rounded-circle scrollUpBtn">
-      <img src="assets/arrow.svg" alt="arrow" id="upArrow" />
+        <img src="assets/arrow.svg" alt="arrow" id="upArrow" />
     </div>
-    <section
-      id="menu"
-      class="pt-5 d-flex justify-content-center align-items-center flex-column"
-    >
-      <h2 class="text-warning">Our Menu</h2>
+    <section id="menu" class="pt-5 d-flex justify-content-center align-items-center flex-column">
+        <h2 class="text-warning">Our Menu</h2>
 
-      <div class="container one mt-5">
-        <div class="row justify-content-evenly">
-          <div class="col-lg-3 Thin_crust"></div>
-          <div class="col-lg-3 glutten_free"></div>
-          <div class="col-lg-3 toppings"></div>
+        <div class="container one mt-5">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-3 Thin_crust"></div>
+                <div class="col-lg-3 glutten_free"></div>
+                <div class="col-lg-3 toppings"></div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-lg-3 Fruit_topping"></div>
+                <div class="col-lg-3 Onions_topping"></div>
+                <div class="col-lg-3 crispy_crust"></div>
+            </div>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-lg-3 Fruit_topping"></div>
-          <div class="col-lg-3 Onions_topping"></div>
-          <div class="col-lg-3 crispy_crust"></div>
-        </div>
-      </div>
     </section>
     <section id="order" class="pt-5">
-      <h2 class="text-warning text-center">Make Your Order</h2>
-      <div class="container-fluid vh-80">
-        <div
-          class="row align-items-center justify-content-center justify-content-evenly"
-        >
-          <div id="form" align="center" class="col-lg-5">
-            <!--  Main activity form -->
-            <form>
+        <h2 class="text-warning text-center">Make Your Order</h2>
+        <div class="container-fluid vh-80">
+            <div class="row align-items-center justify-content-center justify-content-evenly">
+                <div id="form" align="center" class="col-lg-5">
+                    <!--  Main activity form -->
+                    <form>
+                        <label for="psize">Pizza Size<span class="text-danger">*</span></label
+              ><br />
+              <select required name="psize" id="psize">
+                <option value="blank"></option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+              <br />
               <label for="pcrust"
                 >Pizza Crust Type <span class="text-danger">*</span></label
               >
@@ -96,121 +91,77 @@
                 <option value="glutten_free">Glutten Free Crust</option>
               </select>
               <br />
-              <label for="psize"
-                >Pizza Size<span class="text-danger">*</span></label
-              ><br />
-              <select required name="psize" id="psize">
-                <option value="blank"></option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-              </select>
-              <br />
+
               <label for="ptoppings">Pizza Toppings </label>
-              <div class="checkbox">
-                <input type="checkbox" name="topping" value="Mushroom" />
-                <label class="me-5" for="topping">Mushroom</label>
-                <input type="checkbox" name="topping" value="Pepperoni" />
-                <label for="topping">Pepperoni </label>
-                <input type="checkbox" name="topping" value="onions" />
-                <label class="me-5" for="topping">Onions</label>
-                <input type="checkbox" name="topping" value="sausage" />
-                <label for="topping">Sausage</label>
-                <input type="checkbox" name="topping" value="bacon" />
-                <label class="me-5" for="topping">Bacon</label>
-                <input type="checkbox" name="topping" value="x-cheese" />
-                <label for="topping">X-cheese</label>
-              </div>
-              <button id="btn_main" class="mt-5" type="submit">
+                        <div class="checkbox">
+                            <input type="checkbox" name="topping" value="Mushroom" />
+                            <label class="me-5" for="topping">Mushroom</label>
+                            <input type="checkbox" name="topping" value="Pepperoni" />
+                            <label for="topping">Pepperoni </label>
+                            <input type="checkbox" name="topping" value="onions" />
+                            <label class="me-5" for="topping">Onions</label>
+                            <input type="checkbox" name="topping" value="sausage" />
+                            <label for="topping">Sausage</label>
+                            <input type="checkbox" name="topping" value="bacon" />
+                            <label class="me-5" for="topping">Bacon</label>
+                            <input type="checkbox" name="topping" value="x-cheese" />
+                            <label for="topping">X-cheese</label>
+                        </div>
+                        <button id="btn_main" class="mt-5" type="submit">
                 Add to Cart
               </button>
-            </form>
-          </div>
-          <div
-            id="summary"
-            class="col-lg-5 three justify-content-center align-items-center flex-column flex-wrap-wrap"
-          >
-            <summary class="d-flex justify-content-center align-items-center">
-              <h5 class="text-warning">Order Summary</h5>
-              <img class="mb-2" src="assets/bookmark.svg" alt="bookmark" />
-            </summary>
+                    </form>
+                </div>
+                <div id="summary" class="col-lg-5 three justify-content-center align-items-center flex-column flex-wrap-wrap">
+                    <summary class="d-flex justify-content-center align-items-center">
+                        <h5 class="text-warning">Order Summary</h5>
+                        <img class="mb-2" src="assets/bookmark.svg" alt="bookmark" />
+                    </summary>
 
-            <table>
-              <thead>
-                <tr>
-                  <th class="pb-3 pt-3 ps-3">Items</th>
-                  <th class="ps-3 pb-3 pt-3">Amount (kes)</th>
-                  <th class="ps-3 pb-3 pt-3 pe-3">Number</th>
-                </tr>
-                <tr id="pic">
-                  <td class="pb-3 pt-4 ps-3" id="t_crust">
-                    <div class="item_img"></div>
-                    <span id="txt_crust"></span>
-                  </td>
-                  <td align="center" class="ps-3 pb-3">-</td>
-                  <td
-                    class="ps-3 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly align-items-center"
-                  >
-                    <div class="rounded">-</div>
-                    <div class="rounded inc_number bg-warning text-success">
-                      1
-                    </div>
-                    <div class="rounded">+</div>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="t_size ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3">
-                    <p class="text-warning">-Toppings-</p>
-                  </td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr>
-                <!-- <tr>
-                  <td class="pb-3 ps-3"></td>
-                  <td align="center" class="ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr>
-                <tr>
-                  <td class="pb-3 ps-3"></td>
-                  <td align="center" class="ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr>
-                <tr>
-                  <td class="pb-3 ps-3"></td>
-                  <td align="center" class="ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr>
-                <tr>
-                  <td class="pb-3 ps-3"></td>
-                  <td align="center" class="ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr>
-                <tr>
-                  <td class="pb-3 ps-3"></td>
-                  <td align="center" class="ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr>
-                <tr>
-                  <td class="pb-3 ps-3"></td>
-                  <td align="center" class="ps-3 pb-3"></td>
-                  <td align="center" class="ps-3 pb-3 pe-3"></td>
-                </tr> -->
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td class="pb-4 pt-4 ps-3">Total-Amount</td>
-                  <td align="center" class="ps-5 pb-4 pt-4"></td>
-                  <td align="center" class="ps-5 pb-4 pt-4 pe-3"></td>
-                </tr>
-              </tfoot>
-            </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="pb-3 pt-3 ps-3">Items</th>
+                                <th class="ps-3 pb-3 pt-3">Amount (kes)</th>
+                                <th class="ps-3 pb-3 pt-3 pe-3">Number</th>
+                            </tr>
+                            <tr id="pic">
+                                <td class="pb-3 pt-4 ps-3" id="t_crust">
+                                    <div class="item_img"></div>
+                                    <span id="txt_crust"></span>
+                                </td>
+                                <td align="center" class="ps-3 pb-3">-</td>
+                                <td class="ps-3 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly align-items-center">
+                                    <div class="rounded">-</div>
+                                    <div class="rounded inc_number bg-warning text-success">
+                                        1
+                                    </div>
+                                    <div class="rounded">+</div>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="t_size ps-3 pb-3"></td>
+                                <td align="center" class="ps-3 pb-3">
+                                    <p class="text-warning">-Toppings-</p>
+                                </td>
+                                <td align="center" class="ps-3 pb-3 pe-3"></td>
+                            </tr>
 
-            <div class="delivery_container">
-              <form>
-                <label for="deliver"
-                  >Would you want the pizza to be delivered?</label
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="pb-4 pt-4 ps-3">Total-Amount</td>
+                                <td align="center" class="ps-5 pb-4 pt-4"></td>
+                                <td align="center" class="ps-5 pb-4 pt-4 pe-3"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <div class="delivery_container">
+                        <form>
+                            <label for="deliver">Would you want the pizza to be delivered?</label
                 >
                 <select name="bool" id="bool">
                   <option value="yes">Yes</option>
