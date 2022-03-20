@@ -7,7 +7,8 @@ $(document).ready(function() {
     }
 
 
-    //PizzaSize to Amount prototype
+    //Pizza Size to Amount prototype.
+
     Cart.prototype.SizeAmount = function() {
         var pizzaSizeAmount = [];
 
@@ -27,6 +28,8 @@ $(document).ready(function() {
 
         return pizzaSizeAmount;
     }
+
+    //Pizza Crust to Amount Prototype.
 
     Cart.prototype.CrustAmount = function() {
         var pizzaCrustAmount = []
@@ -50,6 +53,33 @@ $(document).ready(function() {
         }
 
         return pizzaCrustAmount;
+    }
+
+    //Pizza Toppings to Amount Prototype.
+
+    Cart.prototype.toppingAmount = function() {
+
+        this.pizzaToppings.map(function(topping) {
+
+            var pizzaToppingAmount = [];
+
+            switch (this.pizzaSize) {
+                case "small":
+                    pizzaToppingAmount.push(200);
+                    break;
+                case "medium":
+                    pizzaToppingAmount.push(300);
+                    break;
+                case "large":
+                    pizzaToppingAmount.push(400)
+                    break;
+                default:
+                    pizzaToppingAmount.push(0)
+            }
+
+            return pizzaToppingAmount;
+
+        })
     }
 
 
@@ -80,22 +110,39 @@ $(document).ready(function() {
         else {
             $("#txt_crust").css("display", "flex");
             $("#txt_crust").text(userSelection.pizzaCrust + " Crust");
+            $("#txt_amount").text(userSelection.CrustAmount());
 
             $("tbody").prepend(
                 " <tr><td id='txt_size' class='ps-3 pb-3'><span>" +
                 userSelection.pizzaSize +
-                "</span></td><td align='center' class='ps-3 pb-3'>1200</td><td align='center' class='ps-3 pb-3 pe-3'>-</td></tr>"
+                "</span></td><td align='center' class='ps-3 pb-3'>" + userSelection.SizeAmount() + "</td><td align='center' class='ps-3 pb-3 pe-3'>-</td > < /tr>"
             );
 
             userSelection.pizzaToppings.forEach((topping) => {
+
+                //COMBINED BUSINESS LOGIC WITH USER INTEFACE: LOOKING FOR METHOD TO MANOUVER THIS. CONTRIBUTE IF YOU HAVE A SOLUTION
+
+                switch (userSelection.pizzaSize) {
+                    case "small":
+                        toppingAmount = 200;
+                        break;
+                    case "medium":
+                        toppingAmount = 300;
+                        break;
+                    case "large":
+                        toppingAmount = 400;
+                        break;
+                    default:
+                        toppingAmount = 0;
+                }
+
                 $("tbody").append(
                     '<tr><td class="pb-3 ps-3">' +
                     topping +
-                    '</td><td align="center" class="ps-3 pb-3"></td><td align="center" class="ps-3 pb-3 pe-3"></td></tr>'
-                );
+                    '</td><td align="center" class="ps-3 pb-3">' + toppingAmount + '</td><td align = "center" class = "ps-3 pb-3 pe-3"></td></tr>');
             });
-            alert(userSelection.SizeAmount());
-            alert(userSelection.CrustAmount());
+
+
             //Make Formto disapper
             $("form").trigger("reset");
             $("#form").css("display", "none");
