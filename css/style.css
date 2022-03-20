@@ -160,6 +160,16 @@ table {
     overflow-y: scroll;
 }
 
+@media screen and (min-width: 993px) {
+    table {
+        width: 50vw;
+    }
+    th,
+    td {
+        padding: 0 9vw;
+    }
+}
+
 thead tr {
     color: #ffffff;
     border: 1px solid #063037;

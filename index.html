@@ -165,25 +165,24 @@
                                     <span id="txt_amount"></span>
                                 </td>
                                 <td class="ps-3 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly align-items-center">
-                                    <div class="rounded">-</div>
-                                    <div class="rounded inc_number bg-warning text-success">
-                                        1
+                                    <div class="rounded" id="minusBtn">-</div>
+                                    <div class="rounded inc_number bg-warning text-success" id="n">
                                     </div>
-                                    <div class="rounded">+</div>
+                                    <div class="rounded" id="plusBtn">+</div>
                                 </td>
                             </tr>
                         </thead>
-
+                        <!-- Toppings heading -->
                         <tbody>
                             <tr>
                                 <td class="t_size ps-3 pb-3"></td>
                                 <td align="center" class="ps-3 pb-3">
-                                    <p class="text-warning">-Toppings-</p>
+                                    <p class="text-warning">Toppings</p>
                                 </td>
                                 <td align="center" class="ps-3 pb-3 pe-3"></td>
                             </tr>
                         </tbody>
-
+                        <!-- Total Amount Footer Table -->
                         <tfoot>
                             <tr>
                                 <td class="pb-4 pt-4 ps-3">Total-Amount</td>
@@ -193,23 +192,25 @@
                         </tfoot>
                     </table>
 
+                    <!-- Delivery prompt -->
+
                     <div class="delivery_container ">
                         <form>
-                            <label for="deliver ">Would you want the pizza to be delivered?        
+                            <label for="deliver">Would you want the pizza to be delivered?        
                             </label>Contacts
 
-                            <select name="bool " id="bool ">
+                            <select name="bool" id="bool">
                                 <option value="yes ">Yes</option>
                                 <option value="no ">No</option>
                             </select>
 
-                            <button class="btn2 " type="submit ">Proceed</button>
+                            <button class="btn2" type="submit">Proceed</button>
                         </form>
 
                     </div>
 
-                    <button class="btn1 " type="reset ">Complete Order</button>
-                    <button id="btn_empty " class="btn1 ">Empty Cart</button>
+                    <button class="btn1" type="reset">Complete Order</button>
+                    <button id="btn_empty" class="btn1">Empty Cart</button>
 
                 </div>
             </div>
