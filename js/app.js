@@ -28,6 +28,30 @@ $(document).ready(function() {
         return pizzaSizeAmount;
     }
 
+    Cart.prototype.CrustAmount = function() {
+        var pizzaCrustAmount = []
+
+        switch (this.pizzaCrust) {
+            case "crispy":
+                pizzaCrustAmount.push(300);
+                break;
+            case "Stuffed":
+                pizzaCrustAmount.push(350);
+                break;
+            case "glutten_free":
+                pizzaCrustAmount.push(400);
+                break;
+            case "Tasmania":
+                pizzaCrustAmount.push(450);
+                break;
+            default:
+                pizzaCrustAmount.push(0);
+
+        }
+
+        return pizzaCrustAmount;
+    }
+
 
     //The User Interface Logic
     $("form").submit(function() {
@@ -70,8 +94,9 @@ $(document).ready(function() {
                     '</td><td align="center" class="ps-3 pb-3"></td><td align="center" class="ps-3 pb-3 pe-3"></td></tr>'
                 );
             });
-            alert(userSelection.SizeAmount())
-                //Make Formto disapper
+            alert(userSelection.SizeAmount());
+            alert(userSelection.CrustAmount());
+            //Make Formto disapper
             $("form").trigger("reset");
             $("#form").css("display", "none");
             $("#summary").css("display", "flex");
