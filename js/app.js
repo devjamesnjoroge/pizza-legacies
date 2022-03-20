@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //User Inputs Constructor
   function Cart(pizza_crust, pizza_size, pizza_topping) {
     (this.pizzaCrust = pizza_crust),
       (this.pizzaSize = pizza_size),
@@ -46,6 +47,11 @@ $(document).ready(function () {
       $("form").trigger("reset");
       $("#form").css("display", "none");
       $("#summary").css("display", "flex");
+      //Empty the Cart Button
+      $("#btn_empty").click(function () {
+        location.reload();
+        location.href($("#order"));
+      });
     }
   });
 });

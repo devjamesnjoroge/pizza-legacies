@@ -176,6 +176,7 @@ tfoot tr {
 
 #summary {
   display: none;
+  margin-top: 3%;
 }
 
 @media screen and (max-width: 992px) {
