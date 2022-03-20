@@ -55,35 +55,8 @@ $(document).ready(function() {
         return pizzaCrustAmount;
     }
 
-    //Pizza Toppings to Amount Prototype.
-
-    Cart.prototype.toppingAmount = function() {
-
-        this.pizzaToppings.map(function(topping) {
-
-            var pizzaToppingAmount = [];
-
-            switch (this.pizzaSize) {
-                case "small":
-                    pizzaToppingAmount.push(200);
-                    break;
-                case "medium":
-                    pizzaToppingAmount.push(300);
-                    break;
-                case "large":
-                    pizzaToppingAmount.push(400)
-                    break;
-                default:
-                    pizzaToppingAmount.push(0)
-            }
-
-            return pizzaToppingAmount;
-
-        })
-    }
-
-
     //The User Interface Logic
+
     $("form").submit(function() {
         event.preventDefault();
         //Collect user Inputs and place them in a constructor
@@ -105,7 +78,6 @@ $(document).ready(function() {
         ) {
             alert("Error, select the starred options");
         }
-
         //append UserSelected Items to order Summary
         else {
             $("#txt_crust").css("display", "flex");
