@@ -39,6 +39,23 @@ header ul li a:hover {
   padding-top: 5%;
 }
 
+/* scroll Up Floating Button */
+.scrollUpBtn {
+  height: 36px;
+  width: 36px;
+  margin-left: 75%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a1548;
+  cursor: pointer;
+}
+
+#upArrow {
+  transform: rotate(-90deg) scale(0.5);
+}
+
 .col-lg-3 {
   height: 60vh;
   background-position: center;
