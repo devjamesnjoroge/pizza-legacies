@@ -9,8 +9,11 @@ body {
 }
 
 .hero {
-  background-color: #4a1548;
+  background-image: linear-gradient(to bottom,  #4a1548c7, #4a1548aa),
+    url("../assets/cauliflower_p.jpg");
   padding: 3% 10%;
+  background-position: center;
+  background-size: cover;
 }
 
 header ul li {
@@ -31,7 +34,7 @@ header ul li a:hover {
   background-color: #0a373e;
   width: 6em;
   height: 2em;
-  border-radius: 2px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
