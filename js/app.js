@@ -5,12 +5,22 @@ $(document).ready(function() {
     var n = 1
     $("#n").text(n)
 
+    //PLUS BUTTON
+
     $("#plusBtn").click(function() {
 
-        n += 1;
-        $("#n").text(n)
-        $("#totalNumbers").text(sumTotal * n);
+        if (n < 50) {
+            n += 1;
+            $("#n").text(n)
+            $("#totalNumbers").text(sumTotal * n);
+        } else {
+            $("#n").text(n)
+            $("#totalNumbers").text(sumTotal * n);
+        }
     })
+
+    //MINUS BUTTON
+
     $("#minusBtn").click(function() {
 
         if (n > 1) {
@@ -85,7 +95,7 @@ $(document).ready(function() {
 
     //The User Interface Logic
 
-    $("form").submit(function() {
+    $("#form1").submit(function() {
         event.preventDefault();
         //Collect user Inputs and place them in a constructor
         var toppingArray = [];
@@ -181,8 +191,11 @@ $(document).ready(function() {
         }
     });
 
+    //COMPLETE ORDER BUTTON EVENT.
+
     $("#btn_order").click(function() {
-        alert(sumTotal * n)
+        $("#summary").css("display", "none");
+        $(".delivery_container").css("display", "flex");
     })
 
 });

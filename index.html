@@ -83,7 +83,7 @@
                 <!--  Main activity form -->
 
                 <div id="form" align="center" class="col-lg-5">
-                    <form>
+                    <form id="form1">
                         <label for="psize">Pizza Size<span class="text-danger">*</span>
                         </label>
 
@@ -192,27 +192,28 @@
                         </tfoot>
                     </table>
 
-                    <!-- Delivery prompt -->
-
-                    <div class="delivery_container ">
-                        <form>
-                            <label for="deliver">Would you want the pizza to be delivered?        
-                            </label>Contacts
-
-                            <select name="bool" id="bool">
-                                <option value="yes ">Yes</option>
-                                <option value="no ">No</option>
-                            </select>
-
-                            <button class="btn2" type="submit">Proceed</button>
-                        </form>
-
-                    </div>
-
                     <button id="btn_order" class="btn1" type="reset">Complete Order</button>
                     <button id="btn_empty" class="btn1">Empty Cart</button>
 
                 </div>
+
+                <!-- Delivery prompt -->
+
+                <div class="delivery_container col-lg-5  justify-content-center align-items-center flex-column flex-wrap-wrap">
+                    <form>
+                        <label for="deliver">Would you want the pizza to be delivered?        
+                        </label>
+
+                        <select name="bool" id="bool">
+                            <option value="yes ">Yes</option>
+                            <option value="no ">No</option>
+                        </select>
+
+                        <button class="btn2" type="submit">Proceed</button>
+                    </form>
+
+                </div>
+
             </div>
         </div>
     </section>
