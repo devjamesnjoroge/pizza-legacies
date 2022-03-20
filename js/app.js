@@ -204,8 +204,22 @@ $(document).ready(function() {
         event.preventDefault();
         if ($("#bool").val() === "blank") {
             alert("Please Select a Yes or a No!");
+        } else if ($("#bool").val() === "yes") {
+            $(".delivery_container").css("display", "none");
+            $(".location_delivery").css("display", "flex");
         } else {
             alert(sumTotal * n);
         }
+    })
+
+    //LOCATION BUTTON
+
+
+
+    $("#form3").submit(function() {
+        var totalPlusDelivery = 300 + parseInt(sumTotal * n)
+        event.preventDefault();
+        alert($("#fname").val() + ", The delivery fee to " + $("#loc").val() + " is 300ksh. Therefore your total charge is 300 + " + sumTotal * n + " =" + totalPlusDelivery);
+        location.reload()
     })
 });

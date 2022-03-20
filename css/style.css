@@ -212,7 +212,8 @@ tfoot tr {
 
 /* delivery prompt */
 
-.delivery_container {
+.delivery_container,
+.location_delivery {
     display: none;
 }
 
