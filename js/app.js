@@ -44,7 +44,8 @@ $(document).ready(function () {
         );
       });
       $("form").trigger("reset");
-      $("#btn_main").hide();
+      $("#form").css("display", "none");
+      $("#summary").css("display", "flex");
     }
   });
 });
