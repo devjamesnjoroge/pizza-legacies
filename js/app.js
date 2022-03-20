@@ -198,4 +198,14 @@ $(document).ready(function() {
         $(".delivery_container").css("display", "flex");
     })
 
+    //DELIVERY BUTTON.
+
+    $("#form2").submit(function() {
+        event.preventDefault();
+        if ($("#bool").val() === "blank") {
+            alert("Please Select a Yes or a No!");
+        } else {
+            alert(sumTotal * n);
+        }
+    })
 });
