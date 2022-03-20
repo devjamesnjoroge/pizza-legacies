@@ -6,6 +6,30 @@ $(document).ready(function() {
         (this.pizzaToppings = pizza_topping);
     }
 
+
+    //PizzaSize to Amount prototype
+    Cart.prototype.SizeAmount = function() {
+        var pizzaSizeAmount = [];
+
+        switch (this.pizzaSize) {
+            case "small":
+                pizzaSizeAmount.push(500);
+                break;
+            case "medium":
+                pizzaSizeAmount.push(800);
+                break;
+            case "large":
+                pizzaSizeAmount.push(1200)
+                break;
+            default:
+                pizzaSizeAmount.push(0)
+        }
+
+        return pizzaSizeAmount;
+    }
+
+
+    //The User Interface Logic
     $("form").submit(function() {
         event.preventDefault();
         //Collect user Inputs and place them in a constructor
@@ -20,12 +44,14 @@ $(document).ready(function() {
             $("#psize").val(),
             toppingArray
         );
+
         if (
             userSelection.pizzaCrust === "blank" ||
             userSelection.pizzaSize === "blank"
         ) {
             alert("Error, select the starred options");
         }
+
         //append UserSelected Items to order Summary
         else {
             $("#txt_crust").css("display", "flex");
@@ -44,9 +70,13 @@ $(document).ready(function() {
                     '</td><td align="center" class="ps-3 pb-3"></td><td align="center" class="ps-3 pb-3 pe-3"></td></tr>'
                 );
             });
+            alert(userSelection.SizeAmount())
+                //Make Formto disapper
             $("form").trigger("reset");
             $("#form").css("display", "none");
             $("#summary").css("display", "flex");
+
+
             //Empty the Cart Button
             $("#btn_empty").click(function() {
                 location.reload();
@@ -54,4 +84,6 @@ $(document).ready(function() {
             });
         }
     });
+
+
 });
