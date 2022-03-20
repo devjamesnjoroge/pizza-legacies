@@ -126,6 +126,9 @@ summary {
 table {
   border-radius: 7px;
   border: 1px solid #063037;
+  display: block;
+  max-height: 55vh;
+  overflow-y: scroll;
 }
 
 thead tr {
