@@ -42,7 +42,7 @@ header ul li a:hover {
 }
 
 
-/* scroll Up Floating Button */
+/* CART Floating Button */
 
 .scrollUpBtn {
     height: 36px;
@@ -56,8 +56,11 @@ header ul li a:hover {
     cursor: pointer;
 }
 
-#upArrow {
-    transform: rotate(-90deg) scale(0.5);
+#ncart {
+    color: gold;
+    position: relative;
+    left: 25px;
+    top: -20px;
 }
 
 .scrollUpBtn:hover {
