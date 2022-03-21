@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
+    $("#ncart").hide()
+
     //Cart Addition and Substracting Items
 
     var n = 1
     $("#n").text(n)
+    $("#ncart").text(n)
 
     //PLUS BUTTON
 
@@ -12,9 +15,11 @@ $(document).ready(function() {
         if (n < 50) {
             n += 1;
             $("#n").text(n)
+            $("#ncart").text(n)
             $("#totalNumbers").text(sumTotal * n);
         } else {
             $("#n").text(n)
+            $("#ncart").text(n)
             $("#totalNumbers").text(sumTotal * n);
         }
     })
@@ -173,6 +178,10 @@ $(document).ready(function() {
 
             //TOTAL AMOUNT BY NUMBER
             $("#totalNumbers").text(sumTotal * n);
+
+            //SHOW NUMBER OF ITEMS IN CART
+
+            $("#ncart").show()
 
 
             //Make Formto disapper
