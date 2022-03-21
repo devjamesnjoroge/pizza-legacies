@@ -4,7 +4,7 @@
 
 #### By ** James Njoroge**
 
-<img src="https://devjamesnjoroge.github.io/pizza-legacies/blob/master/assets/pizza-preview.jpg">
+<img src="https://github.com/devjamesnjoroge/pizza-legacies/blob/master/assets/pizza-preview.jpg">
 
 ## Description
 
