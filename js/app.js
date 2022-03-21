@@ -4,9 +4,9 @@ $(document).ready(function() {
 
     //Cart Addition and Substracting Items
 
-    var n = 1
-    $("#n").text(n)
-    $("#ncart").text(n)
+    var n = 1;
+    $("#n").text(n);
+    $("#ncart").text(n);
 
     //PLUS BUTTON
 
@@ -14,12 +14,12 @@ $(document).ready(function() {
 
         if (n < 50) {
             n += 1;
-            $("#n").text(n)
-            $("#ncart").text(n)
+            $("#n").text(n);
+            $("#ncart").text(n);
             $("#totalNumbers").text(sumTotal * n);
         } else {
-            $("#n").text(n)
-            $("#ncart").text(n)
+            $("#n").text(n);
+            $("#ncart").text(n);
             $("#totalNumbers").text(sumTotal * n);
         }
     })
@@ -30,10 +30,12 @@ $(document).ready(function() {
 
         if (n > 1) {
             n -= 1;
-            $("#n").text(n)
+            $("#n").text(n);
+            $("#ncart").text(n);
             $("#totalNumbers").text(sumTotal * n);
         } else {
-            $("#n").text(n)
+            $("#n").text(n);
+            $("#ncart").text(n);
             $("#totalNumbers").text(sumTotal * n);
         }
 
