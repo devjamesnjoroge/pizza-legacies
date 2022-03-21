@@ -220,7 +220,11 @@ $(document).ready(function() {
     $("#form3").submit(function() {
         var totalPlusDelivery = 300 + parseInt(sumTotal * n)
         event.preventDefault();
-        alert($("#fname").val() + ", The delivery fee to " + $("#loc").val() + " is 300ksh. Therefore your total charge is 300 + " + sumTotal * n + " =" + totalPlusDelivery);
+        alert($("#fname").val() + ", The delivery fee to " + $("#loc").val() + " is 300ksh. Therefore your total charge is 300 + " + sumTotal * n + " =" + totalPlusDelivery + '. We Shall reach out to you via your number, Thank you for shopping with us');
         location.reload()
     })
+
+    //HERO BTN CLICK EVENT
+
+    $("#hero_btn").wrap("<a href='#order'></a>");
 });
